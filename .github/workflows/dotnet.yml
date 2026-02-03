@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 10.0.x
     - name: Move to .sln directory
-      run: cd ClassLibraryProjects\StringLibrary
+      run: cd ClassLibraryProjects/StringLibrary
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
