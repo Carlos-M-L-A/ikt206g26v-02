@@ -20,10 +20,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
-    - name: Move to .sln directory
-      run: cd ClassLibraryProjects/StringLibrary
     - name: Restore dependencies
-      run: dotnet restore StringLibrary.sln
+      run: dotnet
     - name: Build
       run: dotnet build --no-restore
     - name: Test
