@@ -23,7 +23,7 @@ jobs:
     - name: Move to .sln directory
       run: cd ClassLibraryProjects/StringLibrary
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore StringLibrary.sln
     - name: Build
       run: dotnet build --no-restore
     - name: Test
